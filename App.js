@@ -7,20 +7,11 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
 import MainApp from './src/navigation/NavigationBottomTab';
 
 const App = () => {
-
-  return (
-    <SafeAreaView style={{}}>
-      <StatusBar/>
-      <MainApp />
-    </SafeAreaView>
-  );
+  return <MainApp />;
 };
 
 export default App;
