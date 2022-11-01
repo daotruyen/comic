@@ -8,6 +8,7 @@ import ProfileScreen from '../screens/profile';
 import TypeComicScreen from '../screens/typeComic';
 import Colors from '../utils/colors';
 import images from '../config/images';
+import FollowComicScreen from '../screens/follow';
 
 const MainBottomTab = createBottomTabNavigator();
 
@@ -53,6 +54,20 @@ const MainApp = () => {
                   focused
                     ? images.bottomTab.filter_active
                     : images.bottomTab.filter
+                }
+                style={styles.icon}
+              />
+            ),
+          }}
+        />
+        <MainBottomTab.Screen
+          name="Follow"
+          component={FollowComicScreen}
+          options={{
+            tabBarIcon: ({focused}) => (
+              <Image
+                source={
+                  focused ? images.bottomTab.follow_active : images.bottomTab.follow
                 }
                 style={styles.icon}
               />
