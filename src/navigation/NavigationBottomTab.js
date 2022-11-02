@@ -67,7 +67,9 @@ const MainApp = () => {
             tabBarIcon: ({focused}) => (
               <Image
                 source={
-                  focused ? images.bottomTab.follow_active : images.bottomTab.follow
+                  focused
+                    ? images.bottomTab.follow_active
+                    : images.bottomTab.follow
                 }
                 style={styles.icon}
               />
