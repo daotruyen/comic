@@ -19,9 +19,9 @@ const Header = () => {
             size={20}
           />
         </View>
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        {/* <TouchableOpacity style={styles.button} onPress={onPress}>
           <CustomText children={'Login'} style={{color: Colors.white}} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     </View>
   );

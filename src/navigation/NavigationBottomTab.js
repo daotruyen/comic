@@ -44,7 +44,7 @@ const MainApp = () => {
             ),
           }}
         />
-        <MainBottomTab.Screen
+        {/* <MainBottomTab.Screen
           name="TypeComic"
           component={TypeComicScreen}
           options={{
@@ -89,7 +89,7 @@ const MainApp = () => {
               />
             ),
           }}
-        />
+        /> */}
       </MainBottomTab.Navigator>
     </NavigationContainer>
   );
@@ -102,7 +102,7 @@ const screenOptions = {
   headerShown: false,
   tabBarShowLabel: false,
   tabBarStyle: {
-    backgroundColor: Colors.blue,
+    backgroundColor: Colors.white,
     position: 'absolute',
     bottom: 21,
     left: 5,
